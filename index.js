@@ -3,10 +3,10 @@ const rouletteSound = new Audio("rouletteSound.mp3");
 const betInput = document.getElementById("betInput");
 const guessInput = document.getElementById("guessInput");
 const gameState = document.getElementById("gameState");
+const moneyDisplay = document.getElementById("money");
 
 let money = 1000;
 betInput.setAttribute("max",money);
-let moneyDisplay = document.getElementById("money");
 moneyDisplay.innerHTML = `$${money}`;
 
 function sleep(ms) {
