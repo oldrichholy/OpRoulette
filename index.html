@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OP Roulette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><div id="logo">OP Roulette</div></a>
+        <div id="money"></div>
+    </header>
+
+    <div id="content">
+       <div id="heisenberg">
+        <img src="heisenberg.png" alt="Heisenberg">
+       </div>
+
+       <div id="roulette">
+        <img src="rouletteStill.png" alt="roulette" id="rouletteImage">
+       </div>
+
+       <div id="bets">
+            <label for="bet">Bet</label>
+            <input type="number" name="bet" id="betInput" value="0" min="1">
+            <br>
+            <label for="number">Guess</label>
+            <input type="number" name="number" id="guessInput" value="0" min="0" max="36">
+
+            <button id="betButton" onclick="roll('number')">Bet</button>
+            <br>
+            <button id="evenButton" onclick="roll('even')">Even</button>
+            <button id="oddButton" onclick="roll('odd')">Odd</button>
+            <button id="redButton" onclick="roll('red')">Red</button>
+            <button id="blackButton" onclick="roll('black')">Black</button>
+            <p id="gameState"></p>
+       </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
