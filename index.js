@@ -1,9 +1,11 @@
 const roulette = document.getElementById("rouletteImage");
-const rouletteSound = new Audio("rouletteSound.mp3");
 const betInput = document.getElementById("betInput");
 const guessInput = document.getElementById("guessInput");
 const gameState = document.getElementById("gameState");
 const moneyDisplay = document.getElementById("money");
+const rouletteSound = new Audio("rouletteSound.mp3");
+const winSound = new Audio("win.mp3");
+const loseSound = new Audio("lose.mp3");
 
 let money = 1000;
 betInput.setAttribute("max",money);
@@ -27,6 +29,7 @@ async function roll(guessMode){
 
     function win(amount){
         gameState.innerHTML = rolledNumber + ", win!";
+        winSound.play();
         bet *= amount
         money += bet;
         moneyDisplay.innerHTML = `$${money}`;
@@ -34,6 +37,7 @@ async function roll(guessMode){
     
     function lose(){
         gameState.innerHTML = rolledNumber + ", lost!";
+        loseSound.play();
         moneyDisplay.innerHTML = `$${money}`;
     }
 
