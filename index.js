@@ -91,7 +91,6 @@ async function roll(guessMode){
 
     moneyDisplay.innerHTML = `$${money}`;
     betInput.setAttribute("max",money);
-    betInput.value = 0;
     
     }
     else{
