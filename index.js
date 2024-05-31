@@ -30,7 +30,7 @@ async function roll(guessMode){
     function win(amount){
         gameState.innerHTML = `${rolledNumber}, win!`;
         winSound.play();
-        bet *= amount
+        bet *= amount;
         money += bet;
         moneyDisplay.innerHTML = `$${money}`;
     }
@@ -45,7 +45,7 @@ async function roll(guessMode){
         roulette.src="roulette2.gif";
         rouletteSound.play();
         await sleep(3041);
-        roulette.src = "rouletteStill.png"
+        roulette.src = "rouletteStill.png";
     
         if(guessMode == 'number'){
             if(guessedNumber == rolledNumber){
