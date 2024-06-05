@@ -53,8 +53,7 @@ async function roll(guessMode){
             }
             else{
                lose();
-            }
-            
+            }        
         }
         else if(guessMode == 'even'){
             if(rolledNumber % 2 == 0 && rolledNumber != 0){
