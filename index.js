@@ -11,7 +11,7 @@ let money = 1000;
 betInput.setAttribute("max",money);
 moneyDisplay.innerHTML = `$${money}`;
 
-function sleep(ms) {
+function sleep(ms){
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
