@@ -28,7 +28,7 @@ async function roll(guessMode){
     let rolledNumber = Math.trunc(Math.random() * 36)+ 0;
 
     function win(amount){
-        gameState.innerHTML = `${rolledNumber}, win!`;
+        gameState.innerHTML = `${rolledNumber} <br> win!`;
         winSound.play();
         bet *= amount;
         money += bet;
@@ -36,7 +36,7 @@ async function roll(guessMode){
     }
     
     function lose(){
-        gameState.innerHTML = `${rolledNumber}, lost!`;
+        gameState.innerHTML = `${rolledNumber} <br> lost!`;
         loseSound.play();
         moneyDisplay.innerHTML = `$${money}`;
     }

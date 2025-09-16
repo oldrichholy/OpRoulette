@@ -46,3 +46,28 @@ a {
     width: 400px;
     margin-top: -30px;
 }
+#bets {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#bets input, button {
+    border-radius: 5px;
+    border: solid black 1px;
+    font-weight: bold;
+    padding: 8px;
+    margin: 3px;
+}
+#bets #redButton {
+    background-color: red;
+    border: solid white 1px;
+}
+#bets #blackButton {
+    background-color: black;
+    color: white;
+    border: solid white 1px;
+}
+#gameState {
+    font-weight: bold;
+    text-align: center;
+}

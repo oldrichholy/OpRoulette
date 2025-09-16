@@ -24,18 +24,18 @@
        <div id="bets">
             <label for="bet">Bet</label>
             <input type="number" name="bet" id="betInput" value="1" min="1">
-            <br>
             <label for="number">Guess</label>
             <input type="number" name="number" id="guessInput" value="0" min="0" max="36">
 
-            <button id="betButton" onclick="roll('number')">Bet</button>
-            <br>
+            <button id="betButton" onclick="roll('number')">Bet number</button>
+
             <button id="evenButton" onclick="roll('even')">Even</button>
             <button id="oddButton" onclick="roll('odd')">Odd</button>
             <button id="redButton" onclick="roll('red')">Red</button>
             <button id="blackButton" onclick="roll('black')">Black</button>
-            <p id="gameState"></p>
+            
        </div>
+       <p id="gameState"></p>
     </div>
 
     <script src="index.js"></script>
